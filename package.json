@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/DanM1996/blue-42/issues"
   },
-  "homepage": "https://github.com/DanM1996/blue-42#readme"
+  "homepage": "https://github.com/DanM1996/blue-42#readme",
+  "dependencies": {
+    "cfb": "^1.2.0"
+  }
 }
