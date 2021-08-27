@@ -1,4 +1,4 @@
-const team = require('../models/teams');
+const Rosters = require('../models/teams');
 const sequelize = require('../config/connection');
 
 const teamdata = [

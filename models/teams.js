@@ -20,4 +20,4 @@ Rosters.init(
 );
 
 // Export the book model for other files to use
-module.exports = Book;
+module.exports = Rosters;
