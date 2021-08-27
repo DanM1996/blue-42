@@ -2,7 +2,6 @@
 const express = require('express')
 const app = express()
 const port = 3000
-const fs = require('fs')
 
 app.get('/', (req, res) => {
   res.send('Hello Blue42!')
@@ -12,56 +11,63 @@ app.listen(port, () => {
   console.log(`Blue42 listening at http://localhost:${port}`)
 })
 
-//cfbd Varialbes for Testing
-const cfbdKey = "eM6K7uh6WiH7Oh9WhWsby/tgTztc561eiaAtNxFO8+/NKF0YkLnXxPPwbBuG34S4";
-const cfb = require('cfb.js');
+//API Modules
+const { fbsList, fbsGames } = require('./lib/apiCalls');
+let fbsListyear = "2020"
+fbsList(fbsListyear);
+let fbsGamesYear = "2020"
+fbsGames(fbsGamesYear);
 
-// cfbd API Config  
-const defaultClient = cfb.ApiClient.instance;
-const ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
-ApiKeyAuth.apiKey = "Bearer " + cfbdKey;
+// //cfbd Varialbes for Testing
+// const cfbdKey = "eM6K7uh6WiH7Oh9WhWsby/tgTztc561eiaAtNxFO8+/NKF0YkLnXxPPwbBuG34S4";
+// const cfb = require('cfb.js');
 
-//---API Calls---
+// // cfbd API Config  
+// const defaultClient = cfb.ApiClient.instance;
+// const ApiKeyAuth = defaultClient.authentications['ApiKeyAuth'];
+// ApiKeyAuth.apiKey = "Bearer " + cfbdKey;
 
-//--FBS team list--
-function fbsList() {
-    let apiInstance = new cfb.TeamsApi();
-    let opts = { 
-    'year': 2021 // Number | Year filter
-    };
+// //---API Calls---
 
-    apiInstance.getFbsTeams(opts)
-    .then(function(data){
-        console.log('API called successfully. Returned data: ' + data[0].id);
-        //fs.writeFileSync("./data.json", JSON.stringify(data[0], null, 2));
-    }, function(error) {
-        console.error(error);
-    })
-}
+// //--FBS team list--
+// function fbsList() {
+//     let apiInstance = new cfb.TeamsApi();
+//     let opts = { 
+//     'year': 2021 // Number | Year filter
+//     };
 
-fbsList(); 
+//     apiInstance.getFbsTeams(opts)
+//     .then(function(data){
+//         console.log('API called successfully. Returned data: ' + data[0].id);
+//         //fs.writeFileSync("./data.json", JSON.stringify(data[0], null, 2));
+//     }, function(error) {
+//         console.error(error);
+//     })
+// }
 
-//-- Games list--
-function games() {
-    let apiInstance = new cfb.GamesApi();
-    var year = 20; // Number | Year/season filter for games
+// fbsList(); 
 
-    var opts = { 
-      'week': 56, // Number | Week filter
-      'seasonType': "regular", // String | Season type filter (regular or postseason)
-      'team': "team_example", // String | Team
-      'home': "home_example", // String | Home team filter
-      'away': "away_example", // String | Away team filter
-      'conference': "conference_example", // String | Conference abbreviation filter
-      'id': 56 // Number | id filter for querying a single game
-    };
-    apiInstance.getGames(year, opts)
-    .then(function(data){
-        console.log('API called successfully. Returned data: ' + data[0].id);
-        //fs.writeFileSync("./ExampleData/Game_data.json", JSON.stringify(data[0], null, 2));
-    }, function(error) {
-        console.error(error);
-    })
-}
+// //-- Games list--
+// function games() {
+//     let apiInstance = new cfb.GamesApi();
+//     var year = 20; // Number | Year/season filter for games
 
-games(); 
+//     var opts = { 
+//       'week': 56, // Number | Week filter
+//       'seasonType': "regular", // String | Season type filter (regular or postseason)
+//       'team': "team_example", // String | Team
+//       'home': "home_example", // String | Home team filter
+//       'away': "away_example", // String | Away team filter
+//       'conference': "conference_example", // String | Conference abbreviation filter
+//       'id': 56 // Number | id filter for querying a single game
+//     };
+//     apiInstance.getGames(year, opts)
+//     .then(function(data){
+//         console.log('API called successfully. Returned data: ' + data[0].id);
+//         //fs.writeFileSync("./ExampleData/Game_data.json", JSON.stringify(data[0], null, 2));
+//     }, function(error) {
+//         console.error(error);
+//     })
+// }
+
+// games(); 
