@@ -1,11 +1,8 @@
 header{
-    background-image: url(../assets/lucas-andrade-M8uBaLEyGV4-unsplash.jpg);
-    height: 800px;
-    width: 1600px;
-    background-position: center;
+    flex-wrap: wrap;
 }
 .navbar{
-    overflow: hidden;
+  overflow: hidden;
   display: flex;  
   flex-direction: row-reverse;
   justify-content: flex-start;
@@ -14,7 +11,16 @@ header{
     border: none;
     padding: 5px;
     margin-left: 10px;
+    background: none;
+    /* color: white; */
 }
 .header-h1{
     text-align: center;
+    display: inline-block;
+}
+.jumbotron{
+    background-image: url(../assets/lucas-andrade-M8uBaLEyGV4-unsplash.jpg);
+    background-size: 1800px 800px;
+    background-position: center;
+    height: 500px;
 }
