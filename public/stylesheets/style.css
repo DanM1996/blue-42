@@ -1,10 +1,14 @@
-/* .header{
-    background-image: url('../assets/lucas-andrade-M8uBaLEyGV4-unsplash.jpg')
-} */
+header{
+    background-image: url(../assets/lucas-andrade-M8uBaLEyGV4-unsplash.jpg);
+    height: 800px;
+    width: 1600px;
+    background-position: center;
+}
 .navbar{
     overflow: hidden;
   display: flex;  
   flex-direction: row-reverse;
+  justify-content: flex-start;
 }
 .navbtn {
     border: none;
