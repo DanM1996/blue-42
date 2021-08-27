@@ -1,0 +1,16 @@
+/* .header{
+    background-image: url('../assets/lucas-andrade-M8uBaLEyGV4-unsplash.jpg')
+} */
+.navbar{
+    overflow: hidden;
+  display: flex;  
+  flex-direction: row-reverse;
+}
+.navbtn {
+    border: none;
+    padding: 5px;
+    margin-left: 10px;
+}
+.header-h1{
+    text-align: center;
+}

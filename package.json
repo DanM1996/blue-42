@@ -17,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/DanM1996/blue-42/issues"
   },
-  "homepage": "https://github.com/DanM1996/blue-42#readme"
+  "homepage": "https://github.com/DanM1996/blue-42#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.3",
+    "handlebars": "^4.7.7"
+  }
 }
