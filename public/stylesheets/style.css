@@ -72,7 +72,7 @@ header{
     padding: 7px 15px;
     padding-top: 20px;
     font-size: 22px;
-    width: 40%;
+    width: 15%;
     margin-bottom: 15px;
     margin-top: 5px; 
     background-color: rgba(255, 255, 255, 0.75);
@@ -89,4 +89,13 @@ header{
     font-size: 18px;
     font-family: 'Glory', sans-serif;
     font-family: 'Libre Franklin', sans-serif;
+}
+.submit-btn, .email-label, .email-text, .password-label, .password-text, .username-label, .username-text {
+    display: block;
+    text-align: left;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.submit-btn {
+    margin-top: 10px;
 }
