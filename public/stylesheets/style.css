@@ -67,26 +67,51 @@ header{
     font-family: 'Libre Franklin', sans-serif;
     font-family: 'Maven Pro', sans-serif;
 }
-.signupForm {
+.signupForm, .loginForm {
     display: inline-block;
     padding: 7px 15px;
     padding-top: 20px;
     font-size: 22px;
-    width: 40%;
+    width: 15%;
     margin-bottom: 15px;
     margin-top: 5px; 
     background-color: rgba(255, 255, 255, 0.75);
     font-family: 'Glory', sans-serif;
     font-family: 'Libre Franklin', sans-serif;
 }
-.signupForm input {
+.signupForm input, .loginForm input {
     font-size: 15px;
     font-family: 'Glory', sans-serif;
     font-family: 'Libre Franklin', sans-serif;
 }
-.signupForm button {
+.signupForm button, .loginForm button {
     border-radius: 5px;
     font-size: 18px;
     font-family: 'Glory', sans-serif;
     font-family: 'Libre Franklin', sans-serif;
+}
+.submit-btn, .email-label, .email-text, .password-label, .password-text, .username-label, .username-text {
+    display: block;
+    text-align: left;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.submit-btn {
+    margin-top: 10px;
+}
+.login-h2 {
+    align-items: center;
+    width: 100%;
+    border-bottom: 2px solid black;
+    padding-bottom: 15px;
+    margin: auto;
+    font-family: 'Glory', sans-serif;
+    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Maven Pro', sans-serif;
+}
+.username-label-login {
+    display: block;
+    text-align: left;
+    padding-bottom: 5px;
+    padding-top: 15px; 
 }
