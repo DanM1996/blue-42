@@ -16,4 +16,7 @@ app.set('view engine', 'handlebars');
 app.get('/', (req, res) => {
     res.render('test');
 })
+app.get('/home', (req, res) => {
+    res.render('homepage');
+})
 app.listen(PORT, () => console.log('Now listening'));
