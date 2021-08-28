@@ -99,3 +99,19 @@ header{
 .submit-btn {
     margin-top: 10px;
 }
+.login-h2 {
+    align-items: center;
+    width: 100%;
+    border-bottom: 2px solid black;
+    padding-bottom: 15px;
+    margin: auto;
+    font-family: 'Glory', sans-serif;
+    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Maven Pro', sans-serif;
+}
+.username-label-login {
+    display: block;
+    text-align: left;
+    padding-bottom: 5px;
+    padding-top: 15px; 
+}
