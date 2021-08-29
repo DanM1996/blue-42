@@ -13,7 +13,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Glory:wght@500&family=Libre+Franklin:wght@300&family=Maven+Pro&display=swap"
         rel="stylesheet">
-    <link rel="icon" type="image/png" href="../../public/assets/36649-5-american-football-ball-the-duke.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../../public/assets/36649-5-american-football-ball-the-duke.png" />
 </head>
 
 <body>
@@ -23,8 +25,8 @@
             <nav class="navbar">
                 {{!-- {{#if loggedIn}} --}}
                 {{!-- Will replace with the href once it's created --}}
-                <button id='myTeam' class='navbtn'>My Team</button>
-                <button id='draftPlayers' class='navbtn'>Draft Players</button>
+                <button id='dashboard' class='navbtn'>My Dashboard</button>
+                <button id='pickTeam' class='navbtn'>Pick Teams</button>
                 <button id='viewMatchups' class='navbtn'>Matchups</button>
 
                 <button id='logout' class='navbtn'>Log out</button>
@@ -43,6 +45,7 @@
     <footer>
 
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 
 </html>

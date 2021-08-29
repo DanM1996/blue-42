@@ -19,4 +19,7 @@ app.get('/', (req, res) => {
 app.get('/home', (req, res) => {
     res.render('homepage');
 })
+app.get('/dashboard', (req, res) => {
+    res.render('dashboard');
+})
 app.listen(PORT, () => console.log('Now listening'));
