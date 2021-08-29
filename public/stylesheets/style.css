@@ -117,3 +117,10 @@ header{
     padding-bottom: 5px;
     padding-top: 15px; 
 }
+.row {
+    padding: 50px;
+}
+.card {
+    height: 300px;
+    width: 300px;
+}
