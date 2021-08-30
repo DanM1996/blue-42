@@ -2,6 +2,9 @@
 header{
     flex-wrap: wrap;
 }
+body {
+    min-height: 100%;
+}
 .nav {
     display: flex;
     justify-content: space-between;
@@ -141,6 +144,7 @@ header{
     font-family: 'Libre Franklin', sans-serif;
     padding-left: 30px;
     padding-right: 30px;
+    margin-top: 250px;
 }
 .copyright {
     padding-bottom: 20px;

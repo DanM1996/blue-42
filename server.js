@@ -13,10 +13,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
-app.get('/', (req, res) => {
+app.get('/login', (req, res) => {
     res.render('login');
 })
-app.get('/home', (req, res) => {
+app.get('/', (req, res) => {
     res.render('homepage');
 })
 app.get('/dashboard', (req, res) => {
