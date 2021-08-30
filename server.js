@@ -22,4 +22,7 @@ app.get('/', (req, res) => {
 app.get('/dashboard', (req, res) => {
     res.render('dashboard');
 })
+app.get('/pickteams', (req, res) => {
+    res.render('pick-teams');
+})
 app.listen(PORT, () => console.log('Now listening'));
