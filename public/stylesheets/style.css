@@ -176,3 +176,17 @@ ul.collection {
     width: 100px;
     height: 100px;
 }
+#cardDeck {
+    display:flex;
+    justify-content: center;
+}
+
+/* 
+.card {
+    width: auto;
+    float: left;
+}
+.card-content{
+    text-align: center;
+    font-weight: bold;
+    } */

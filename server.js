@@ -7,6 +7,9 @@ const hbs = exphbs.create({});
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+
+const teamsAvailable = require ('./ExampleData/FbsTeams_data.json');
+
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
@@ -24,13 +27,14 @@ app.get('/dashboard', (req, res) => {
     res.render('dashboard');
 })
 app.get('/pickteams', (req, res) => {
-    res.render('pick-teams');
+    res.render('pick-teams', {teamsAvailable: teamsAvailable});
 })
 app.listen(PORT, () => console.log('Now listening'));
 
 //API Modules
 const { fbsList, fbsGames } = require('./lib/apiCalls');
-let fbsListyear = "2020"
+let fbsListyear = "2021"
 fbsList(fbsListyear);
-let fbsGamesYear = "2020"
+let fbsGamesYear = "2021"
 fbsGames(fbsGamesYear);
+
