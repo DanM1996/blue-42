@@ -183,11 +183,11 @@ ul.collection {
 .pick-btn {
     text-align: center;
 }
-.wrapper{
+/* .wrapper{
     /* background-color: rgb(233, 230, 224); */
     /* margin-top: -50px;
     margin-bottom: -50px; */
-}
+
 @media screen and (max-width: 900px) {
     
 }
