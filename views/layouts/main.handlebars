@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue 42 - Fantasy Football</title>
+    <link rel="stylesheet" href='/stylesheets/style.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Glory:wght@500&family=Libre+Franklin:wght@300&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Glory:wght@500&family=Libre+Franklin:wght@300&family=Maven+Pro&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/36649-5-american-football-ball-the-duke.png" />
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <h1 class="webName"><a href="/">Blue 42</a></h1>
+            <nav class="navbar">
+                {{!-- {{#if loggedIn}} --}}
+                {{!-- Will replace with the href once it's created --}}
+                <a href="/dashboard" class='navbtn'>My Dashboard</a>
+                <a href="/pickteams" class='navbtn'>Pick Teams</a>
+                <button id='viewMatchups' class='navbtn'>Matchups</button>
+
+                <button id='logout' class='navbtn'>Log out</button>
+                {{!-- {{else}} --}}
+                {{!-- Will replace with the href once it's created --}}
+                <a href="/login" class='navbtn'>Log in</a>
+                {{!-- {{/if}} --}}
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+        {{{ body }}}
+    </main>
+    <footer class="footer">
+        <div class='container'>
+            <div class='row'>
+                <div class="col s6">
+                    <h5> About Us:</h5>
+                    <p>We like football</p>
+                </div>
+                <div class="col 14 s6 contributors">
+                    <h5>Contributors: </h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" target="_blank" href="https://github.com/DanM1996">Dan Martinez</li>
+                        <li><a class="grey-text text-lighten-3" target="_blank" href="https://github.com/ehajek">Eddie Hajek</li>
+                        <li><a class="grey-text text-lighten-3" target="_blank" href="https://github.com/GinleyP87">Patrick Ginley</li>
+                        <li><a class="grey-text text-lighten-3" target="_blank" href="https://github.com/twfb29">Taylor Black</li>
+                    </ul>
+                </div>
+            </div>
+            {{!-- Copyright information if wanted, I have it commented out for now --}}
+            {{!-- <div class="footer-copyright copyright">
+                <div class="container">
+                &copy; Blue 42 - Fantasy Football <script type="text-javascript">
+                    document.write(new Date().getFullYear());
+                </script>
+                </div>
+            </div> --}}
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>
