@@ -135,7 +135,7 @@ body {
 .cardRows {
     padding: 50px;
 }
-.card {
+.dashboard-card {
     height: 300px;
     width: 300px;
 }
