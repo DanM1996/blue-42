@@ -1,5 +1,8 @@
 
 header{
+    background-color: var(--tertiarty-color);
+    display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 body {
@@ -190,3 +193,32 @@ ul.collection {
 .selectbox {
     text-align: center;
 }
+<<<<<<< HEAD
+=======
+@media screen and (max-width: 980px) {
+    header h1 {
+        width: 100%;
+        text-align: center
+    }
+    .navbar {
+        width: 100%;
+        text-align: center
+    }
+    
+}
+@media screen and (max-width: 720px){
+.webName {
+    margin-top: 0px;
+    padding-top: 30px;
+    padding-left: 0px;
+    margin-bottom: 0px;
+} 
+.nav {
+    display: block;
+    width: 100%;
+    }
+    .navbar {
+        padding-right: 0px;
+    }
+}
+>>>>>>> develop
