@@ -12,7 +12,9 @@ Rosters.init(
     pick2: DataTypes.STRING,
     pick3: DataTypes.STRING,
     pick4: DataTypes.STRING,
-    pick5: DataTypes.STRING
+    pick5: DataTypes.STRING,
+    weekPoints: DataTypes.INTEGER,
+    totalPoints: DataTypes.INTEGER
   },
   {
     sequelize
