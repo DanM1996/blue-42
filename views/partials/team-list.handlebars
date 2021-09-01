@@ -1,15 +1,25 @@
-<div class="teams">
-    <section class='wrapper'>
-    <div>
-        {{!-- Text describing what your dashboard is/you look at your team here --}}
-    </div>
-        <div class="dashboard-h2">
-            <p></p>
+<div class='card-styles'>
+           <div class='card'>
+            <div class='card-image waves-effect waves-block waves-light'>
+                <img class='activator' src={{logos.[0]}}>
+            </div>
+            <div class='card-content'>
+                {{!-- <span class="card-title activator grey-text text-darken-4">{{school}}<i
+                        class='material-icons right'>more_vert</i></span> --}}
+            </div>
+            <div class='card-reveal'>
+                <span class='card-title grey-text text-darken-4'>{{school}}<i
+                        class="material-icons right">close</i></span>
+                <p>Mascot: {{mascot}}</p>
+                <p>Conference: {{conference}}</p>
+                <p>Abbreviation: {{abbreviation}}</p>
+                <p>City: {{location.city}}</p>
+            </div>
         </div>
-        <div>
-            {{!-- show the team(s) the user picked here as a card --}}
-            {{> card}}
-        </div>
-</section>
+        <p class="selectbox">
+            <label>
+                <input type="checkbox" />
+                <span>Select</span>
+            </label>
+        </p>
 </div>
-

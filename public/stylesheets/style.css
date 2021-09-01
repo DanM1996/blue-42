@@ -134,6 +134,9 @@ body {
 }
 .cardRows {
     padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 .card {
     height: 300px;
@@ -180,13 +183,6 @@ ul.collection {
     display:flex;
     justify-content: center;
 }
-
-/* 
-.card {
-    width: auto;
-    float: left;
-}
-.card-content{
+.selectbox {
     text-align: center;
-    font-weight: bold;
-    } */
+}
