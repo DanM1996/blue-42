@@ -53,7 +53,8 @@ body {
     font-family: 'Libre Franklin', sans-serif;
     font-family: 'Maven Pro', sans-serif;
 }
-.whoWeAre h2 {
+.whoWeAre h2, .dashboard-h2, .teams-h2 {
+    text-align: center;
     align-items: center;
     width: 38%;
     border-bottom: 2px solid black;
@@ -142,19 +143,10 @@ body {
     flex-wrap: wrap;
 }
 .dashboard-card {
-    height: 300px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
     background-color: white;
 }
- /* {
-    text-align: center;
-    border-bottom: 2px solid black;
-    width: 40%;
-    font-size: 20px;
-    font-family: 'Glory', sans-serif;
-    font-family: 'Libre Franklin', sans-serif;
-    font-family: 'Maven Pro', sans-serif;
-} */
 .footer {
     display: flex;
     justify-content: space-between;
@@ -166,6 +158,11 @@ body {
     padding-left: 30px;
     padding-right: 30px;
     /* margin-top: 250px; */
+}
+.card-styles {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 100px;
 }
 .copyright {
     padding-bottom: 20px;
@@ -184,10 +181,6 @@ ul.collection {
 .collection-item img {
     width: 100px;
     height: 100px;
-}
-#cardDeck {
-    display:flex;
-    justify-content: center;
 }
 .selectbox {
     text-align: center;
