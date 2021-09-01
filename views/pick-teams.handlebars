@@ -10,8 +10,8 @@
         <div class="container services">
             {{!-- show the team(s) the user picked here as a card --}}
             <div class='row cardRows'>
+                {{#each teamsAvailable}}
                 <div class='col s4 m6 l3 center-align'>
-                    {{#each teamsAvailable}}
                         <div class='card'>
                             <div class='card-image waves-effect waves-block waves-light'>
                                 <img class='activator' src={{logos.[0]}}>

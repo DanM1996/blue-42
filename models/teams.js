@@ -7,16 +7,20 @@ class Rosters extends Model {}
 
 Rosters.init(
   {
-    title: DataTypes.STRING,
-    pick1: DataTypes.STRING,
-    pick2: DataTypes.STRING,
-    pick3: DataTypes.STRING,
-    pick4: DataTypes.STRING,
-    pick5: DataTypes.STRING,
+    title: {
+      type: DataTypes.INTEGER,
+      primaryKey: true
+    },
+    pick1: DataTypes.INTEGER,
+    pick2: DataTypes.INTEGER,
+    pick3: DataTypes.INTEGER,
+    pick4: DataTypes.INTEGER,
+    pick5: DataTypes.INTEGER,
     weekPoints: DataTypes.INTEGER,
     totalPoints: DataTypes.INTEGER
   },
   {
+    timestamps: false,
     sequelize
   }
 );

@@ -10,6 +10,7 @@ const PORT = process.env.PORT || 3001;
 
 const teamsAvailable = require ('./ExampleData/FbsTeams_data.json');
 
+
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
@@ -30,9 +31,11 @@ app.get('/pickteams', (req, res) => {
     res.render('pick-teams', {teamsAvailable: teamsAvailable});
 })
 app.listen(PORT, () => console.log('Now listening'));
+app.use('/api', require('./routes/Teams'));
 
 //API Modules
 const { fbsList, fbsGames } = require('./lib/apiCalls');
+const sequelize = require('./config/connection');
 let fbsListyear = "2021"
 fbsList(fbsListyear);
 let fbsGamesYear = "2021"
