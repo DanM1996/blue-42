@@ -81,7 +81,7 @@ body {
     padding: 7px 15px;
     padding-top: 20px;
     font-size: 22px;
-    width: 15%;
+    width: 20%;
     margin-bottom: 15px;
     margin-top: 5px; 
     background-color: rgba(255, 255, 255, 0.75);
@@ -141,17 +141,20 @@ body {
     justify-content: space-around;
     flex-wrap: wrap;
 }
-.card {
+.dashboard-card {
     height: 300px;
-    width: 300px;
+    width: 200px;
+    background-color: white;
 }
-.dashboard-h2, .teams-h2 {
+ /* {
     text-align: center;
+    border-bottom: 2px solid black;
+    width: 40%;
     font-size: 20px;
     font-family: 'Glory', sans-serif;
     font-family: 'Libre Franklin', sans-serif;
     font-family: 'Maven Pro', sans-serif;
-}
+} */
 .footer {
     display: flex;
     justify-content: space-between;
@@ -198,7 +201,13 @@ ul.collection {
         width: 100%;
         text-align: center
     }
-    
+    .signupForm, .loginForm {
+        width: 30%;  
+      } 
+    .whoWeAre h2, .signup-h2, .login-h2 {
+        font-size: 40px;
+        width: 50%;
+    } 
 }
 @media screen and (max-width: 720px){
 .webName {
@@ -211,7 +220,19 @@ ul.collection {
     display: block;
     width: 100%;
     }
-    .navbar {
+.navbar {
         padding-right: 0px;
     }
+    .signupForm, .loginForm {
+        width: 30%;  
+      } 
+}
+@media screen and (max-width: 480px){
+    .signupForm, .loginForm {
+        width: 40%;  
+      } 
+      .whoWeAre h2, .signup-h2, .login-h2 {
+        font-size: 30px;
+        width: 80%;
+    } 
 }
