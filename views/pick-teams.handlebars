@@ -7,9 +7,13 @@
             <h2>Pick Your Teams</h2>
             <p></p>
         </div>
-        <div>
+        <div class="container services">
             {{!-- show the team(s) the user picked here as a card --}}
-            {{> team-list}}
+            <div class='cardRows'>
+                    {{#each teamsAvailable}}
+                    {{> team-list}}
+                    {{/each}}
+            </div>
         </div>
     </div>
 </section>

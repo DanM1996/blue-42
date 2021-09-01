@@ -135,6 +135,9 @@ body {
 }
 .cardRows {
     padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 .dashboard-card {
     height: 300px;
@@ -180,14 +183,10 @@ ul.collection {
     width: 100px;
     height: 100px;
 }
-.pick-btn {
-    text-align: center;
+#cardDeck {
+    display:flex;
+    justify-content: center;
 }
-/* .wrapper{
-    /* background-color: rgb(233, 230, 224); */
-    /* margin-top: -50px;
-    margin-bottom: -50px; */
-
-@media screen and (max-width: 900px) {
-    
+.selectbox {
+    text-align: center;
 }
