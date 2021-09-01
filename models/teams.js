@@ -11,7 +11,7 @@ Rosters.init(
       type: DataTypes.INTEGER,
       primaryKey: true
     },
-    pick1: DataTypes.INTEGER,
+    pick1: DataTypes.STRING,
     pick2: DataTypes.INTEGER,
     pick3: DataTypes.INTEGER,
     pick4: DataTypes.INTEGER,
