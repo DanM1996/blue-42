@@ -8,7 +8,9 @@ const teamdata = [
     school2: 'Ohio State',
     school3: 'University of Ohio',
     school4: 'Cincinati',
-    school5: 'Bowling Green'
+    school5: 'Bowling Green',
+    weekPoints: 0,
+    totalPoints: 0
   },
   {
     title: 'Taylor',
@@ -16,7 +18,9 @@ const teamdata = [
     school2: 'Florida State',
     school3: 'University of Central Florida',
     school4: 'Florida State University',
-    school5: 'Duke University'
+    school5: 'Duke University',
+    weekPoints: 0,
+    totalPoints: 0
   },
   {
     title: 'Eddie',
@@ -24,7 +28,9 @@ const teamdata = [
     school2: 'Virgina Tech',
     school3: 'Oklahoma State',
     school4: 'University of Oklahoma',
-    school5: 'University of Texas'
+    school5: 'University of Texas',
+    weekPoints: 0,
+    totalPoints: 0
   },
   {
     title: 'Patrick',
@@ -32,7 +38,9 @@ const teamdata = [
     school2: 'Air Force',
     school3: 'Memphis Tigers',
     school4: 'Navy Midshipmen',
-    school5: 'SMU Mustangs'
+    school5: 'SMU Mustangs',
+    weekPoints: 0,
+    totalPoints: 0
   },
   {
     title: 'Daniel',
@@ -40,7 +48,9 @@ const teamdata = [
     school2: 'Arkansas Razorbacks',
     school3: 'Auburn Tigers',
     school4: 'LSU Tigers',
-    school5: 'Kent State Golden Flashes'
+    school5: 'Kent State Golden Flashes',
+    weekPoints: 0,
+    totalPoints: 0
   }
 ];
 
