@@ -23,15 +23,15 @@
         <div class="nav">
             <h1 class="webName"><a href="/">Blue 42</a></h1>
             <nav class="navbar">
-                {{!-- {{#if loggedIn}} --}}
+                {{#if loggedIn}}
                 {{!-- Will replace with the href once it's created --}}
                 <a href="/dashboard" class='navbtn'>My Dashboard</a>
                 <a href="/pickteams" class='navbtn'>Pick Teams</a>
                 <button id='logout' class='navbtn'>Log out</button>
-                {{!-- {{else}} --}}
+                {{else}}
                 {{!-- Will replace with the href once it's created --}}
                 <a href="/login" class='navbtn'>Log in</a>
-                {{!-- {{/if}} --}}
+                {{/if}}
             </nav>
 
         </div>

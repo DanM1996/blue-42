@@ -8,6 +8,7 @@ const exphbs = require('express-handlebars');
 const hbs = exphbs.create({});
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const PORT = process.env.PORT || 3001;
+const teamsAvailable = require ('./LiveAPIData/FbsTeams_data.json')
 
 const sess = {
     secret: 'Super secret secret',
@@ -32,9 +33,9 @@ app.use(router);
 
 //API Modules
 const { fbsList, fbsGames } = require('./lib/apiCalls');
-let fbsListyear = "2020"
+let fbsListyear = "2021"
 fbsList(fbsListyear);
-let fbsGamesYear = "2020"
+let fbsGamesYear = "2021"
 fbsGames(fbsGamesYear);
 
 sequelize.sync({ force: false }).then(() => {

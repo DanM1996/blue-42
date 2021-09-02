@@ -1,5 +1,6 @@
 const router = require("express").Router();
 const authGuard = require('../utils/auth');
+const teamsAvailable = require ('../LiveAPIData/FbsTeams_data.json');
 
 router.all("*", function (req, res, next) {
     console.log(req.url);
@@ -16,8 +17,8 @@ router.get('/', (req, res) => {
 router.get('/dashboard', authGuard, (req, res) => {
     res.render('dashboard');
 })
-router.get('/pickteams', authGuard, (req, res) => {
-    res.render('pick-teams');
+router.get('/pickteams', (req, res) => {
+    res.render('pick-teams', {teamsAvailable: teamsAvailable})
 })
 
 
