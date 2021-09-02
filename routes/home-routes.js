@@ -20,7 +20,7 @@ router.get('/dashboard', authGuard, (req, res) => {
 })
 router.get('/pickteams', (req, res) => {
     if (loggedIn) {
-        res.render('pick-teams', {teamsAvailable: teamsAvailable})
+        res.render('pick-teams', {teamsAvailable: teamsAvailable}, {loggedIn: req.session.loggedIn})
     }
 })
 
