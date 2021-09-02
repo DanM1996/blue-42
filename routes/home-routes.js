@@ -18,8 +18,8 @@ router.get('/dashboard', authGuard, (req, res) => {
     console.log(req.session)
     res.render('dashboard', {loggedIn: req.session.loggedIn});
 })
-router.get('/pickteams', (req, res) => {
-        res.render('pick-teams', {teamsAvailable: teamsAvailable})
+router.get('/pickteams', authGuard, (req, res) => {
+        res.render('pick-teams', {teamsAvailable: teamsAvailable, loggedIn: req.session.loggedIn})
 })
 
 module.exports = router;
