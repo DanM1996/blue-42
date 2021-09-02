@@ -56,6 +56,7 @@ body {
 .whoWeAre h2, .dashboard-h2, .teams-h2 {
     text-align: center;
     align-items: center;
+    text-align: center;
     width: 38%;
     border-bottom: 2px solid black;
     padding-bottom: 15px;
@@ -161,8 +162,11 @@ body {
 }
 .card-styles {
     width: 300px;
+<<<<<<< HEAD
     height: 300px;
     margin-bottom: 100px;
+=======
+>>>>>>> 85fa8f52629b94514faf55e7face60bc15bc1b32
 }
 .copyright {
     padding-bottom: 20px;
