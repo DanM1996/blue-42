@@ -10,9 +10,9 @@ User.init(
         // define an id column
         id: {
             type: DataTypes.INTEGER,
-            allowNull: false,
             primaryKey: true,
-            autoIncrement: false
+            autoIncrement: true,
+            allowNull: true
         },
 
         email: {
@@ -34,7 +34,7 @@ User.init(
             allowNull: false,
             validate: {
                 // password must be at least 7 characters long
-                len: [7]
+                len: [5]
             }
         }
     },
@@ -42,7 +42,7 @@ User.init(
     {
         hooks: {
             async beforeCreate(newAccount) {
-                newUse.password = await bcrypt.hash(newAccount.password, 10);
+                newAccount.password = await bcrypt.hash(newAccount.password, 10);
                 return newAccount;
             },
             
