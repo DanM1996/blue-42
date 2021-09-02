@@ -1,4 +1,4 @@
-const { Model, DataTypes } = require('sequelize');
+const { Model, DataTypes, INTEGER, STRING } = require('sequelize');
 // Require the connection to the database (connection.js)
 const sequelize = require('../config/connection');
 
@@ -7,11 +7,12 @@ class Rosters extends Model {}
 
 Rosters.init(
   {
-    title: {
+    id:{
       type: DataTypes.INTEGER,
       primaryKey: true
-    },
-    pick1: DataTypes.STRING,
+    }, 
+    title: DataTypes.STRING,
+    pick1: DataTypes.INTEGER,
     pick2: DataTypes.INTEGER,
     pick3: DataTypes.INTEGER,
     pick4: DataTypes.INTEGER,

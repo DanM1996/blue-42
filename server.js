@@ -31,11 +31,11 @@ app.get('/pickteams', (req, res) => {
     res.render('pick-teams', {teamsAvailable: teamsAvailable});
 })
 app.listen(PORT, () => console.log('Now listening'));
-app.use('/api', require('./routes/Teams'));
+app.use(require('./controllers/'));
 
 //API Modules
 const { fbsList, fbsGames } = require('./lib/apiCalls');
-const sequelize = require('./config/connection');
+//const sequelize = require('./config/connection');
 let fbsListyear = "2021"
 fbsList(fbsListyear);
 let fbsGamesYear = "2021"

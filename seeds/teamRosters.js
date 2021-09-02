@@ -4,7 +4,7 @@ const sequelize = require('../config/connection');
 const teamdata = [
   {
     title: 'Alex',
-    school1: 'University of Akron',
+    school1: 2005,
     school2: 'Ohio State',
     school3: 'University of Ohio',
     school4: 'Cincinati',
