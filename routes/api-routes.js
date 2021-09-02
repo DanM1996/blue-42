@@ -1,18 +1,18 @@
 const router = require('express').Router();
-const Team = require('../models/team');
+const Team = require('../models/teams');
 
 // Routes
 // =============================================================
 
 // GET route for getting all of the Teams
-router.get('/api/Teams', (req, res) => {
+router.get('api//Teams', (req, res) => {
   Team.findAll({}).then(dbTeam => {
     res.json(dbTeam);
   });
 });
 
 // POST route for saving a new Team
-router.post('/api/Teams', (req, res) => {
+router.post('api//Teams', (req, res) => {
   Team.create({
         title: req.body.title,
         pick1: req.body.pick1,
@@ -28,7 +28,7 @@ router.post('/api/Teams', (req, res) => {
 });
 
 // DELETE route for deleting a Team
-router.delete('/api/Teams/:id', (req, res) => {
+router.delete('api/Teams/:id', (req, res) => {
   Team.destroy({
     where: {
         title: req.body.title,
@@ -46,7 +46,7 @@ router.delete('/api/Teams/:id', (req, res) => {
 });
 
 // PUT route for updating a Team
-router.put('/api/Teams/:id', (req, res) => {
+router.put('api/Teams/:id', (req, res) => {
   Team.update(
     {
         title: req.body.title,

@@ -1,24 +1,24 @@
-async function loginForm(event) {
+async function loginFormHandler(event) {
     event.preventDefault();
 
-    const email = document.querySelector('#email-signup').value.trim();
-    const password = document.querySelector('#password-signup').value.trim();
+    const username = document.querySelector('#username-login').value.trim();
+    const password = document.querySelector('#password-login').value.trim();
 
-    if (email && password) {
-        await fetch('/api/users/login', {
+    if (username && password) {
+        const response = await fetch('/user/login', {
             method: 'post',
             body: JSON.stringify({
-                email,
+                username,
                 password
             }),
             headers: { 'Content-Type': 'application/json' }
         });
         if (response.ok) {
-            document.location.replace('/dashboard')
-          } else {
+            document.location.replace('/dashboard');
+        } else {
             alert(response.statusText);
-          }
+        }
     }
 }
 
-document.querySelector('.loginForm').addEventListener('submit', loginForm);
+document.querySelector('.loginForm').addEventListener('submit', loginFormHandler);
