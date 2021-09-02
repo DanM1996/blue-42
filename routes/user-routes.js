@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const User = require("../models").User;
-
+const bcrypt = require("bcrypt")
 
 // GET /api/users
 router.get("/", (req, res) => {
@@ -62,7 +62,7 @@ router.post("/", (req, res) => {
 router.post('/login', (req, res) => {
     User.findOne({
         where: {
-            email: req.body.email
+            username: req.body.username
         }
     }).then(cffUserData => {
         if (!cffUserData) {
@@ -70,7 +70,7 @@ router.post('/login', (req, res) => {
             return;
         }
 
-        const validPassword = cffUserData.checkPassword(req.body.password);
+        const validPassword = bcrypt.compareSync(req.body.password, cffUserData.password)
 
         if (!validPassword) {
             res.status(400).json({ message: 'Incorrect password!' });

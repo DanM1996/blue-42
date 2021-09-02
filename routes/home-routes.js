@@ -15,7 +15,8 @@ router.get('/', (req, res) => {
     res.render('homepage');
 })
 router.get('/dashboard', authGuard, (req, res) => {
-    res.render('dashboard');
+    console.log(req.session)
+    res.render('dashboard', {loggedIn: req.session.loggedIn});
 })
 router.get('/pickteams', (req, res) => {
     res.render('pick-teams', {teamsAvailable: teamsAvailable})
