@@ -141,6 +141,7 @@ body {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-bottom: 50px;
 }
 .dashboard-card {
     height: 100px;
