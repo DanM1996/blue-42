@@ -24,6 +24,4 @@ router.get('/pickteams', (req, res) => {
     }
 })
 
-
-
 module.exports = router;
