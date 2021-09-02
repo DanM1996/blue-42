@@ -21,12 +21,12 @@ VALUES
   (2, "Bob", 2132, 41, 2199, 61, 2390, 0, 0),
   (3, "Jeff", 248, 66, 96, 309, 127, 0, 0);
   
-CREATE TABLE Users (
+CREATE TABLE User (
 	id INTEGER NOT NULL PRIMARY KEY auto_increment, 
     username VARCHAR(100) NOT NULL,
     email VARCHAR(255) NOT NULL UNIQUE,
     password VARCHAR(255) NOT NULL
 );
-INSERT INTO Users (username, email, password)
+INSERT INTO User (username, email, password)
 VALUES 
 ("Lernantino", "lernantino@gmail.com", "password1234");

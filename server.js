@@ -8,7 +8,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 
-const teamsAvailable = require ('./ExampleData/FbsTeams_data.json');
+const teamsAvailable = require ('./LiveApiData/FbsTeams_data.json');
 
 
 app.engine('handlebars', hbs.engine);
